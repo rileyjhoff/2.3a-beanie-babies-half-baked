@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { getBeanieBabies } from './services/fetch-utils';
-// import BeaniesList from './BeaniesList';
+import BeaniesList from './BeaniesList';
 
 function App() {
   const [beanieBabies, setBeanieBabies] = useState([]);
@@ -33,6 +33,7 @@ function App() {
         <button onClick={() => setPage(page + 1)}>Next Page</button>
       </div>
       {/* pass the beanie babies into the BeaniesList component */}
+      <BeaniesList beanieBabies={beanieBabies} />
     </>
   );
 }

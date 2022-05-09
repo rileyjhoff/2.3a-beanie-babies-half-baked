@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BeaniesPage from './BeaniesPage';
-// import BeanieDetail from './BeanieDetail';
+import BeanieDetail from './BeanieDetail';
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
           </Route>
           <Route path="/beanies/:id">
             {/* this route should point to a particular beanie baby by id and render that specific BeanieDetail page */}
-            {/* <BeanieDetail /> */}
+            <BeanieDetail />
           </Route>
         </Switch>
       </div>
